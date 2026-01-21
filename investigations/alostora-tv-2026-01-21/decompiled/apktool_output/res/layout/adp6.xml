@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/item_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0sp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:padding="3.0sp" android:layout_width="fill_parent" android:layout_height="160.0sp">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cat_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/cid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" />
+        <TextView android:textSize="12.0sp" android:id="@id/cat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:id="@id/adp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" android:layout_weight="1.0" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:textColorLink="@color/text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/category_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:text="...." android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

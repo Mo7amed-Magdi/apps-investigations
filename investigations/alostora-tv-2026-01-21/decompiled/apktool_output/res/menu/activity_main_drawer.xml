@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_dashboard" android:id="@id/nav_home" android:title="@string/action_home" />
+        <item android:icon="@drawable/ic_event" android:id="@id/matches_list" android:title="@string/action_match_times" />
+        <item android:icon="@drawable/ic_rss" android:id="@id/news" android:title="@string/action_latest_news" />
+    </group>
+    <item android:title="@string/menu_title_info">
+        <menu>
+            <item android:icon="@drawable/ic_gmail" android:id="@id/action_contact" android:title="@string/action_contact" />
+            <item android:icon="@drawable/ic_website" android:id="@id/action_website" android:title="@string/action_website" />
+        </menu>
+    </item>
+    <item android:title="@string/menu_title_setting">
+        <menu>
+            <item android:icon="@drawable/ic_share" android:id="@id/action_sahre" android:title="@string/action_share" />
+            <item android:icon="@drawable/ic_dark_mode" android:id="@id/nav_dark_mode" android:title="@string/dark_mode" android:checkable="true" />
+        </menu>
+    </item>
+</menu>

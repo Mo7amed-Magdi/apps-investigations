@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color">#ff212020</color>
+    <color name="bg_color_2">#ff212020</color>
+    <color name="frame_color">#ff262525</color>
+    <color name="text_color">#ffffffff</color>
+    <color name="text_color_bw">#ffffffff</color>
+</resources>

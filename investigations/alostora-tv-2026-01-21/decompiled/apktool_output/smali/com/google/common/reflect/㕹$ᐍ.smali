@@ -1,0 +1,360 @@
+.class public Lcom/google/common/reflect/㕹$ᐍ;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/common/reflect/㕹;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "\u140d"
+.end annotation
+
+
+# instance fields
+.field private final map:L토/ᛆ;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "L\ud1a0/\u16c6;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    invoke-static {}, L토/ᛆ;->ᗖ()L토/ᛆ;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/google/common/reflect/㕹$ᐍ;->map:L토/ᛆ;
+
+    return-void
+.end method
+
+.method public constructor <init>(L토/ᛆ;)V
+    .locals 0
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Lcom/google/common/reflect/㕹$ᐍ;->map:L토/ᛆ;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public ࢠ(Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/㕹$ᐍ;)Ljava/lang/reflect/Type;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/google/common/reflect/㕹$ᐍ;->map:L토/ᛆ;
+
+    .line 2
+    .line 3
+    new-instance v1, Lcom/google/common/reflect/㕹$ს;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p1}, Lcom/google/common/reflect/㕹$ს;-><init>(Ljava/lang/reflect/TypeVariable;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, L토/ᛆ;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    check-cast v0, Ljava/lang/reflect/Type;
+
+    .line 13
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    if-nez v0, :cond_2
+
+    .line 16
+    .line 17
+    invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    array-length v2, v0
+
+    .line 22
+    if-nez v2, :cond_0
+
+    .line 23
+    .line 24
+    return-object p1
+
+    .line 25
+    :cond_0
+    new-instance v2, Lcom/google/common/reflect/㕹;
+
+    .line 26
+    .line 27
+    invoke-direct {v2, p2, v1}, Lcom/google/common/reflect/㕹;-><init>(Lcom/google/common/reflect/㕹$ᐍ;Lcom/google/common/reflect/㕹$ᾍ;)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {v2, v0}, Lcom/google/common/reflect/㕹;->₼(Lcom/google/common/reflect/㕹;[Ljava/lang/reflect/Type;)[Ljava/lang/reflect/Type;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p2
+
+    .line 34
+    sget-boolean v1, Lcom/google/common/reflect/ᐍ$ຽ;->㜁:Z
+
+    .line 35
+    .line 36
+    if-eqz v1, :cond_1
+
+    .line 37
+    .line 38
+    invoke-static {v0, p2}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    if-eqz v0, :cond_1
+
+    .line 43
+    .line 44
+    return-object p1
+
+    .line 45
+    :cond_1
+    invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getGenericDeclaration()Ljava/lang/reflect/GenericDeclaration;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getName()Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    invoke-static {v0, p1, p2}, Lcom/google/common/reflect/ᐍ;->㬿(Ljava/lang/reflect/GenericDeclaration;Ljava/lang/String;[Ljava/lang/reflect/Type;)Ljava/lang/reflect/TypeVariable;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object p1
+
+    .line 57
+    return-object p1
+
+    .line 58
+    :cond_2
+    new-instance p1, Lcom/google/common/reflect/㕹;
+
+    .line 59
+    .line 60
+    invoke-direct {p1, p2, v1}, Lcom/google/common/reflect/㕹;-><init>(Lcom/google/common/reflect/㕹$ᐍ;Lcom/google/common/reflect/㕹$ᾍ;)V
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {p1, v0}, Lcom/google/common/reflect/㕹;->ᗖ(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    return-object p1
+.end method
+
+.method public final ₼(Ljava/util/Map;)Lcom/google/common/reflect/㕹$ᐍ;
+    .locals 5
+
+    .line 1
+    invoke-static {}, L토/ᛆ;->㜁()L토/ᛆ$ᾍ;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lcom/google/common/reflect/㕹$ᐍ;->map:L토/ᛆ;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, v1}, L토/ᛆ$ᾍ;->ᗖ(Ljava/util/Map;)L토/ᛆ$ᾍ;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v1
+
+    .line 22
+    if-eqz v1, :cond_0
+
+    .line 23
+    .line 24
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    check-cast v1, Ljava/util/Map$Entry;
+
+    .line 29
+    .line 30
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v2
+
+    .line 34
+    check-cast v2, Lcom/google/common/reflect/㕹$ს;
+
+    .line 35
+    .line 36
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v1
+
+    .line 40
+    check-cast v1, Ljava/lang/reflect/Type;
+
+    .line 41
+    .line 42
+    invoke-virtual {v2, v1}, Lcom/google/common/reflect/㕹$ს;->㜁(Ljava/lang/reflect/Type;)Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v3
+
+    .line 46
+    xor-int/lit8 v3, v3, 0x1
+
+    .line 47
+    .line 48
+    const-string v4, "Type variable %s bound to itself"
+
+    .line 49
+    .line 50
+    invoke-static {v3, v4, v2}, L토/ᅉ;->ᗖ(ZLjava/lang/String;Ljava/lang/Object;)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {v0, v2, v1}, L토/ᛆ$ᾍ;->ቌ(Ljava/lang/Object;Ljava/lang/Object;)L토/ᛆ$ᾍ;
+
+    .line 54
+    .line 55
+    .line 56
+    goto :goto_0
+
+    .line 57
+    :cond_0
+    new-instance p1, Lcom/google/common/reflect/㕹$ᐍ;
+
+    .line 58
+    .line 59
+    invoke-virtual {v0}, L토/ᛆ$ᾍ;->ઠ()L토/ᛆ;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v0
+
+    .line 63
+    invoke-direct {p1, v0}, Lcom/google/common/reflect/㕹$ᐍ;-><init>(L토/ᛆ;)V
+
+    .line 64
+    .line 65
+    .line 66
+    return-object p1
+.end method
+
+.method public final 㜁(Ljava/lang/reflect/TypeVariable;)Ljava/lang/reflect/Type;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/google/common/reflect/㕹$ᐍ$ᾍ;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p0}, Lcom/google/common/reflect/㕹$ᐍ$ᾍ;-><init>(Lcom/google/common/reflect/㕹$ᐍ;Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/㕹$ᐍ;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0, p1, v0}, Lcom/google/common/reflect/㕹$ᐍ;->ࢠ(Ljava/lang/reflect/TypeVariable;Lcom/google/common/reflect/㕹$ᐍ;)Ljava/lang/reflect/Type;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    return-object p1
+.end method

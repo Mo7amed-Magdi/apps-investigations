@@ -1,0 +1,14 @@
+.class public abstract Lcom/google/firebase/messaging/RemoteMessage$ᾍ;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/firebase/messaging/RemoteMessage;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "\u1f8d"
+.end annotation

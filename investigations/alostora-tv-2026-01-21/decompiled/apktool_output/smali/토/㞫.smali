@@ -1,0 +1,38 @@
+.class public final synthetic L토/㞫;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnTouchListener;
+
+
+# instance fields
+.field public final synthetic 㜁:L토/ᵢ;
+
+
+# direct methods
+.method public synthetic constructor <init>(L토/ᵢ;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, L토/㞫;->㜁:L토/ᵢ;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, L토/㞫;->㜁:L토/ᵢ;
+
+    invoke-static {v0, p1, p2}, L토/ᵢ;->ṍ(L토/ᵢ;Landroid/view/View;Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method

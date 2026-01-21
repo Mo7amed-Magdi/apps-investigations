@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:background="@drawable/dottedx" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="left" android:id="@id/imageView_custom_dialog_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:src="@drawable/close_circle" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:id="@id/watch" android:background="@drawable/item_round_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:layout_marginBottom="5.0sp" android:text="@string/watch" android:fontFamily="@font/bb" app:icon="@drawable/ic_watch" app:iconGravity="start" app:iconTint="@color/text_color" />
+        <com.google.android.material.button.MaterialButton android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/text_color" android:id="@id/download" android:background="@drawable/item_round_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0sp" android:layout_marginBottom="5.0sp" android:text="@string/download" android:fontFamily="@font/bb" app:icon="@drawable/ic_download" app:iconGravity="start" app:iconTint="@color/text_color" />
+    </LinearLayout>
+</LinearLayout>

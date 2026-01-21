@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textDirection="rtl" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/progress_loader" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/custom_progress" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/warning2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0sp" android:minWidth="100.0sp" android:minHeight="100.0sp" app:srcCompat="@drawable/ic_warning" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/error_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="error" app:fontFamily="@font/bb" />
+        <Button android:textSize="16.0sp" android:id="@id/retryButton" android:background="@drawable/rounded_dotted" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="اعادة المحاولة" android:layout_below="@id/errorText" android:layout_centerHorizontal="true" style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/matches_activity_recycler_view" android:layoutAnimation="@anim/layout_animation_fall_down" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="7.0sp" android:layout_marginTop="5.0sp" android:layout_marginRight="7.0sp" android:layout_weight="1.0" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="3.0dip" app:cardCornerRadius="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/custom_progress" android:indeterminateTint="@color/text_color" />
+</com.google.android.material.card.MaterialCardView>
